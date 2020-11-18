@@ -10,6 +10,7 @@ class Detail extends React.Component {
   render() {
     const { location } = this.props;
     if (location.state) {
+      //새로고침하면 location이 없으므로 이걸 해줘야됨
       return <span>{location.state.title}</span>;
     } else {
       return null;
